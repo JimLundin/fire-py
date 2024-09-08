@@ -10,3 +10,8 @@
 #   universal: false
 
 -e file:.
+mypy==1.11.2
+mypy-extensions==1.0.0
+    # via mypy
+typing-extensions==4.12.2
+    # via mypy

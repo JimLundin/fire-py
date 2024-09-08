@@ -15,7 +15,15 @@ build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev-dependencies = []
+dev-dependencies = [
+    "mypy>=1.11.2",
+]
+
+[tool.ruff.lint]
+select = ["ALL"]
+
+[tool.mypy]
+strict = true
 
 [tool.hatch.metadata]
 allow-direct-references = true
